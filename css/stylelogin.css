@@ -1,0 +1,105 @@
+*{font-family:'Times New Roman', Times, serif;}
+html, body {
+    margin: 0%;
+    height: 100%;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+form{
+    display: flex;
+    align-items: center;
+    background-color: #afd3f9;
+    width: 60%;
+    height: 70%;
+    font-size: 15px;
+    padding: 5%;
+    border-radius: 4%;
+    max-width: 350px;
+    min-width: 300px;
+    max-height: 700px;
+    min-height: 500px;
+
+    
+}
+ul{
+    display:flexbox;
+    align-items: center;
+    margin: 0%;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+}
+#img_perfil{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+li{
+    margin-top: 10%;
+    display: flex;
+    justify-content: start;
+}
+li > label {
+    margin-right: 4%;
+}
+li > input {
+    border-style: none;
+    background-color: #ffffff ;
+    box-shadow: 1px 2px 5px 0px #000000;
+    border-top:none ;
+}
+li>input:active{
+    box-shadow: 1px 2px 5px 0px #ffffff;
+}
+li>input:hover{
+    box-shadow: 1px 2px 5px 0px #ffffff;
+}
+li>input{
+    border-style: none;
+}
+#container_submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 13%;
+}
+#submit{
+    width: 30%;
+    height: 15%;
+}
+#submit:active{
+    background-color: rgb(192, 192, 192);
+}
+#submit:hover{
+    background-color: rgb(192, 192, 192);
+}
+#password{
+    margin-left:15%;
+}
+
+@media (max-width:400px){
+    
+    ul>li>img{
+        width: 0%;
+        height: 0%;
+    }
+    ul{
+        display:grid
+    }
+    *{
+        font-size: 15px;
+    }
+    li> label {
+        margin-right: 0%;
+    }
+    #password{
+        margin-left:0px;
+    }
+    form{
+        height: 300px;
+    }
+}
