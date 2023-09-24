@@ -27,8 +27,7 @@ form{
     
 }
 ul{
-    display:flexbox;
-    align-items: center;
+
     margin: 0%;
     list-style: none;
     height: 100%;
@@ -38,6 +37,7 @@ ul{
     display: flex;
     justify-content: center;
     margin-bottom: 10%;
+    margin-top: 25%;
 }
 li{
     margin-top: 10%;
@@ -61,6 +61,7 @@ li>input:hover{
 }
 li>input{
     border-style: none;
+    max-height: 20px;
 }
 #container_submit{
     display: flex;
@@ -70,6 +71,7 @@ li>input{
 #submit{
     width: 30%;
     height: 15%;
+    min-height: 20px;
 }
 #submit:active{
     background-color: rgb(192, 192, 192);
@@ -81,7 +83,7 @@ li>input{
     margin-left:15%;
 }
 
-@media (max-width:400px){
+@media (max-width:500px){
     
     ul>li>img{
         width: 0%;
@@ -102,4 +104,11 @@ li>input{
     form{
         height: 300px;
     }
+}
+@media(max-width:600px){
+
+    #password{
+        margin-left:10%;
+    }
+
 }
