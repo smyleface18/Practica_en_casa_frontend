@@ -1,4 +1,8 @@
-*{font-family:'Times New Roman', Times, serif;}
+@import 
+url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+*{
+    font-family: 'Roboto Condensed';
+  }
 html, body {
     margin: 0%;
     height: 100%;
@@ -9,6 +13,10 @@ main{
     justify-content: center;
     height: 100%;
     width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, 
+    rgba(31,101,188,1) 64%, rgba(42,140,247,1) 89%, 
+    rgba(0,173,255,1) 100%);
 }
 form{
     display: flex;
@@ -23,7 +31,7 @@ form{
     min-width: 300px;
     max-height: 700px;
     min-height: 500px;
-
+    box-shadow: 1px 2px 5px 0px #000000;
     
 }
 ul{
@@ -48,20 +56,15 @@ li > label {
     margin-right: 4%;
 }
 li > input {
-    border-style: none;
-    background-color: #ffffff ;
-    box-shadow: 1px 2px 5px 0px #000000;
-    border-top:none ;
-}
-li>input:active{
-    box-shadow: 1px 2px 5px 0px #ffffff;
-}
-li>input:hover{
-    box-shadow: 1px 2px 5px 0px #ffffff;
-}
-li>input{
-    border-style: none;
+    outline-style: none;
+    background-color: #afd3f9;
+    border-bottom: solid #698ec0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     max-height: 20px;
+    padding-top: 10px;
+    
 }
 #container_submit{
     display: flex;
@@ -69,22 +72,34 @@ li>input{
     margin-top: 13%;
 }
 #submit{
+    padding-top: 0%;
     width: 30%;
     height: 15%;
     min-height: 20px;
+    border-radius: 5%;
 }
 #submit:active{
-    background-color: rgb(192, 192, 192);
+    background-color: #698ec0;
 }
 #submit:hover{
-    background-color: rgb(192, 192, 192);
+    background-color: #698ec0;
 }
 #password{
     margin-left:15%;
 }
-
+#checkbox {
+    width: 1.15em;
+    height: 1.15em;
+}
+#checkbox:hover {
+    width: 15px;
+    height: 15px
+}
 @media (max-width:500px){
-    
+    html, body {
+        margin: 0%;
+        height: 100%;
+    }
     ul>li>img{
         width: 0%;
         height: 0%;
