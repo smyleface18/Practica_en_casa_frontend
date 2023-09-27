@@ -32,23 +32,22 @@ form{
     max-height: 700px;
     min-height: 500px;
     box-shadow: 1px 2px 5px 0px #000000;
+    justify-content: center;
     
 }
 ul{
-
     margin: 0%;
     list-style: none;
-    height: 100%;
-    width: 100%;
 }
 #img_perfil{
     display: flex;
     justify-content: center;
-    margin-bottom: 10%;
-    margin-top: 25%;
+    margin-bottom: 15%;
+    margin-top: 0%;
+
 }
 li{
-    margin-top: 10%;
+    margin-top: 15%;
     display: flex;
     justify-content: start;
 }
@@ -84,7 +83,7 @@ li > input {
 #submit:hover{
     background-color: #698ec0;
 }
-#password{
+#password,#contraseña,#usuario{
     margin-left:15%;
 }
 #checkbox {
