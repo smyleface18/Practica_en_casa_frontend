@@ -3,22 +3,31 @@ url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=
 *{
     font-family: 'Roboto Condensed';
   }
+  :root{
+    --background:#161229;
+    --primary:#161229;
+    --secundary:#b1a192;
+    --aurora:#893e0a;
+  }
 html, body {
     margin: 0%;
     height: 100%;
-    
+    background-color: var(--background);
 }
 main{
+    min-width: 350px;
+    min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
-    
-    background: rgb(2,0,36);
+    height: 100vh;
+    background-repeat:unset;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/229/814/non_2x/vector-beautiful-landscape-illustration.jpg);
+
+    /*background: rgb(2,0,36);
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, 
     rgba(31,101,188,1) 64%, rgba(42,140,247,1) 89%, 
-    rgba(0,173,255,1) 100%);
+    rgba(0,173,255,1) 100%);*/
 }
 form{
     background: rgba(255,255,255,0.45);
@@ -37,60 +46,86 @@ form{
     min-width: 300px;
     max-height: 700px;
     min-height: 500px;
-    box-shadow: 1px 2px 5px 0px #000000;
+    -webkit-box-shadow: inset 0px 0px 300px -26px rgba(137,62,10,0.3);
+    -moz-box-shadow: inset 0px 0px 300px -26px rgba(137,62,10,0.3);
+    box-shadow: inset 0px 0px 300px -26px rgba(137,62,10,0.3);
     justify-content: center;
     
 }
-ul{
+.container_for{
     margin: 0%;
     list-style: none;
 }
-#img_perfil{
+#container_img_perfil{
     display: flex;
     justify-content: center;
     margin-bottom: 15%;
     margin-top: 0%;
-
 }
-li{
+
+#img_perfil{
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.my_form_input{
     margin-top: 15%;
     display: flex;
     justify-content: start;
+    flex-direction: column;
 }
-li > label {
-    margin-right: 4%;
+
+.my_form_input > label {
+    margin-bottom: 3px;
+    color:var(--primary);
+    font-size: 1.1rem;
 }
-li > input {
+div > input {
     outline-style: none;
     background: none;
-    border-bottom: solid #0b1b31;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border: solid #161229 2px;
     max-height: 20px;
     padding-top: 10px;
-    
+    width: 25vh;
+    min-width: 150px;
+    border-radius: 0.5rem;
+}
+div > input:hover {
+    border: solid #b1a192 2px;
+    transition: 0.5s;
+}
+div > input:active {
+    border: solid #b1a192 2px;
 }
 #container_submit{
     display: flex;
     justify-content: center;
-    margin-top: 13%;
+    align-items: center;
+    height: 10vh;
 }
 #submit{
+    list-style-type: none;
     padding-top: 0%;
-    width: 30%;
-    height: 15%;
+    padding-bottom: 0%;
+    width: 100%;
+    height: 2rem;
     min-height: 20px;
     border-radius: 5%;
+    font-size: 1.5rem;
+    border-bottom:none;
 }
 #submit:active{
-    background-color: #265ca2;
+    background-color:#b1a192;
+    border: solid #b1a192;
 }
 #submit:hover{
-    background-color: #265ca2;
+    background-color:#b1a192;
+    border: solid #b1a192;
+    transform:scale(1.2);
+    cursor: pointer;
 }
 #password,#contraseña,#usuario{
-    margin-left:15%;
+    margin-left:0%;
 }
 #checkbox {
     width: 1.15em;

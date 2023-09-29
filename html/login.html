@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/stylelogin.css">
-    <script src="/js/loguaer.js"></script>
+    <link rel="stylesheet" href="../css/stylelogin.css">
+    <script src="../js/loguaer.js"></script>
     <title>Document</title>
 </head>
 <body>
     <main>
         <form>
-            <ul>
-                <li id="img_perfil">
-                    <img src="/img/perfil-del-usuario.png" alt="imagen de perfil" height="150px">
-                </li>
-                <li>
+            <div class="container_for">
+                <div id="container_img_perfil">
+                    <img  id="img_perfil" src="https://static.vecteezy.com/system/resources/previews/026/583/492/non_2x/funny-cartoon-owl-illustration-vector.jpg" alt="imagen de perfil" height="150px">
+                </div>
+                <div class="my_form_input">
                     <label for="usuario">Nombre de Usuario </label>
                     <input type="text" name="usuario" id="usuario">
-                </li>
-                <li>
+                </div>
+                <div class="my_form_input">
                     <label for="contraseña">Contraseña</label>
                     <input type="password" name="contraseña" id="contraseña" >
-                </li>
-                <li id="container_submit">
+                </div class="my_form_input">
+                <div id="container_submit">
                     <input type="submit" id="submit" onclick="loguear()">
-                </li>
-            </ul>
+                </div>
+            </div>
 </main>
 </body>
 </html>
